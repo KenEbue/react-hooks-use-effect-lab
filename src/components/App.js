@@ -13,6 +13,7 @@ function App() {
       setCurrentQuestion((currentQuestionId) => currentQuestionId + 1);
     } else {
       setCurrentQuestion(null);
+      setScore(0); // Reset score to 0 when game is over
     }
     if (correct) {
       setScore((score) => score + 1);
